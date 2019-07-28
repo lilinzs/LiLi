@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/location"
+            android:background="#ffffff" />
+        <!--<EditText-->
+            <!--android:id="@+id/geocodekey"-->
+            <!--android:layout_width="300dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="搜索" />-->
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/location"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="搜索"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/baiduditu_bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+        <Button
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="定位" />
+
+        <Button
+            android:id="@+id/marker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/location"
+            android:text="添加marhker" />
+
+
+        <Button
+            android:id="@+id/poi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/marker"
+            android:text="poi检索" />
+
+        <Button
+            android:id="@+id/planSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/poi"
+            android:text="路径规划" />
+
+        <ListView
+            android:background="#ffffff"
+            android:visibility="gone"
+            android:id="@+id/baidu_lv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"></ListView>
+
+
+        <!--<AutoCompleteTextView
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/autoCompleteTextView"
+            android:completionThreshold="2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            />-->
+    </RelativeLayout>
+
+</LinearLayout>

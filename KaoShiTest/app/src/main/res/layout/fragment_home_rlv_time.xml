@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="380dp"
+    android:layout_height="140dp">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dp">
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/f_home_img"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+
+            />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/f_home_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/f_home_img"
+            android:text="精彩到计时:"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/f_home_tv2"
+            android:layout_marginTop="12dp"
+            android:layout_below="@+id/f_home_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/f_home_img"
+            android:text="剩余:"
+            android:textSize="23dp" />
+
+        <TextView
+            android:id="@+id/f_home_time"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/f_home_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/f_home_img"
+            android:text="活动结束"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+</LinearLayout>

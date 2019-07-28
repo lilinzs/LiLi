@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.home.mycenter.GouWuCheActivity">
+
+   <ExpandableListView
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       android:id="@+id/gouwuche_rlv"
+       />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/gouwuche_tv_jine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="金额："
+            android:textSize="18dp" />
+
+
+
+        <Button
+            android:id="@+id/gouwuche_i_bt_jiesuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:text="结算："
+            android:layout_marginBottom="30dp"
+            />
+
+        <TextView
+            android:layout_marginLeft="60dp"
+            android:id="@+id/gouwuche_tv_dizhi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/gouwuche_tv_jine"
+            android:layout_gravity="center"
+            android:hint="地址："
+            android:textSize="18dp" />
+
+
+        <TextView
+
+            android:id="@+id/gouwuche_tv_jindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gouwuche_tv_dizhi"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="当前经度："
+            android:textSize="18dp" />
+
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/gouwuche_tv_jindu"
+            android:id="@+id/gouwuche_tv_weidu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gouwuche_tv_dizhi"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:hint="当前纬度："
+            android:textSize="18dp" />
+
+
+    </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
